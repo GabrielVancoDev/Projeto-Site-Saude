@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Principal</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/padrao.css" />
+    <link rel="stylesheet" href="css/menuInicial.css" />
+  </head>
+  <body>
+    <header>
+      <div class="icons">
+        <p>Olá, <span id="user-name">Nome</span></p>
+        <span class="icone-sino"
+          ><img
+            src="icons/bell-svgrepo-com.png"
+            alt=""
+            srcset=""
+            style="width: 5dvh"
+        /></span>
+        <span class="icone-acess"
+          ><img
+            src="icons/acessibilidade.png"
+            alt=""
+            srcset=""
+            style="width: 5dvh"
+        /></span>
+        <button class="menu">
+          <menu type="toolbar"
+            ><img
+              src="icons/barra menu.png"
+              alt=""
+              style="width: 30px"
+            />MENU</menu
+          >
+        </button>
+      </div>
+    </header>
+
+    <section class="pesquisa">
+      <input type="text" placeholder="Pesquisar: Ex. Campanhas ativas" />
+      <button class="mic-icone">
+        <img src="icons/microfone.png" alt="" srcset="" />
+      </button>
+      <button class="pesquisar">
+        <img src="icons/lupa.png" alt="" sizes="" srcset="" />
+      </button>
+    </section>
+
+    <section class="menu-rapido">
+      <h2>Menu Rápido</h2>
+      <button onclick="laudosMedicos()">
+        <img
+          src="icons/cedulacolor.png"
+          alt=""
+          class="icones-menu-rapido"
+        />Confira seus laudos médicos prontos
+      </button>
+      <button onclick="mostrarConsultas()">
+        <img
+          src="icons/calendario-linhas-canetacolor.png"
+          alt=""
+          srcset=""
+          class="icones-menu-rapido"
+        />
+        Confira suas consultas marcadas
+      </button>
+      <button onclick="consultarBoletos()">
+        <img
+          src="icons/codigo-de-barras-lidocolor.png"
+          alt=""
+          class="icones-menu-rapido"
+        />
+        Boletos para pagamentos
+      </button>
+    </section>
+
+    <div class="menu-container"></div>
+    <h1 class="campanhas">Campanhas Atuais</h1>
+    <div class="slides-container">
+      <div class="slides-fade">
+        <img
+          src="img/campanhas/outubro rosa.jpg"
+          class="imagens-campanha"
+          width="1000px"
+        />
+        <a
+          href="https://www.gov.br/dnocs/pt-br/assuntos/noticias/dnocs-reforca-a-importancia-do-outubro-rosa"
+        >
+          https://www.gov.br/dnocs/pt-br/assuntos/noticias/dnocs-reforca-a-importancia-do-outubro-rosa</a
+        >
+      </div>
+      <div class="slides-fade">
+        <img
+          src="img/campanhas/novembroAzul1.png"
+          alt="Imagem de campanha"
+          class="imagens-campanha"
+        />
+        <a
+          href="https://agenciagov.ebc.com.br/noticias/202311/novembro-azul-dnocs-destaca-a-importancia-da-preservacao-e-diagnostico-precoce-do-cancer-de-prostata"
+        >
+          https://agenciagov.ebc.com.br/noticias/202311/novembro-azul-dnocs-destaca-a-importancia-da-preservacao-e-diagnostico-precoce-do-cancer-de-prostata
+        </a>
+
+        <!-- Link de referencia da img 1
+         https://www.gov.br/dnocs/pt-br/assuntos/noticias/dnocs-reforca-a-importancia-do-outubro-rosa
+         Link img 2
+         https://agenciagov.ebc.com.br/noticias/202311/novembro-azul-dnocs-destaca-a-importancia-da-preservacao-e-diagnostico-precoce-do-cancer-de-prostata-->
+      </div>
+      <a class="voltar" onclick="changeSlide(-1)">&#10094; </a>
+      <a class="proximo" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    <footer class="rodape" style="margin-top: 100px">
+      <div>
+        <nav>
+          <li>
+            <a href="paginaInicial.html" target="_blank">
+              <img
+                src="img/Imagem1.png"
+                alt="Imagem da logo do site"
+                class="imagem-logo-cabecario"
+            /></a>
+          </li>
+        </nav>
+      </div>
+      <div>
+        <nav>
+          <li>
+            <div class="container-sem-img">
+              <br />
+              <a href="criarConta.html" target="_blank">Criar conta</a>
+              <br />
+              <a href="login.html" target="_blank">Logar com sua conta</a>
+              <br />
+              <a href="menuPrincipal.html" target="_blank"
+                >Acessar página inicial</a
+              >
+              <br />
+            </div>
+          </li>
+        </nav>
+      </div>
+      <div>
+        <nav>
+          <li>
+            <div class="container-sem-img">
+              <br />
+              <p>Contatos</p>
+              <a
+                href="mailto:medicalapp@gmail.com"
+                class="contatos-interagivel"
+                target="_self"
+                >Entre em contato conosco via e-mail clicando aqui!</a
+              >
+              <a
+                href="tel:+55 43 91111-1111"
+                class="contatos-interagivel"
+                target="_self"
+                >Ligue para a central de suporte clicando aqui!</a
+              >
+            </div>
+          </li>
+        </nav>
+      </div>
+    </footer>
+  </body>
+  <script src="scripts/menuPrincipal.js"></script>
+</html>

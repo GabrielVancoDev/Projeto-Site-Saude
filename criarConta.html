@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar conta</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/padrao.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/criarConta.css" />
+    <script src="scripts/criarConta.js"></script>
+
+
+  </head>
+  <body>
+    <header>
+      <nav class="cabecario">
+        <div>
+          <a href="paginaInicial.html">
+            <img
+              src="img/Imagem1.png"
+              alt="Imagem da logo do site"
+              class="imagem-logo-cabecario"
+            />
+          </a>
+        </div>
+        <div class="lista">
+          <li class="lista-nav">
+            <a href="menuPrincipal.html" target="_self" class="cab">Menu inicial</a>
+          </li>
+          <li class="lista-nav">
+            <a href="criarConta.html" target="_blank" class="cab">Criar uma conta</a>
+          </li>
+          <li class="lista-nav">
+            <a href="login.html" target="_self" class="cab">Realizar o login</a>
+          </li>
+        </div>
+    </header>
+
+    <div class="form">
+      <form id="signup-form" action="submit-form/" method="post">
+        <label for="nome">Primeiro nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" required />
+        <br />
+        <label for="date">Data de nascimento</label>
+        <input type="date" name="dataNascimento" id="dataNascimento" required />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <br />
+        <label for="senha">Senha:</label>
+        <br />
+        <input type="password" id="senha" name="senha" required />
+        <br />
+        <label for="confirmarSenha">Confirmar Senha:</label>
+        <br />
+        <input
+          type="password"
+          id="confirmarSenha"
+          name="confirmarSenha"
+          required
+        />
+        <br />
+        <label for="telefone">Número do Celular</label>
+        <input type="number" name="telefone" id="telefone" />
+        <a href="" target="_parent" rel="noopener noreferrer"></a>
+        <div class="termos">
+          <input type="checkbox" name="aceitarTermos" id="aceitarTermos" />
+          <label for="aceitarTermos">Li e Aceito os termos</label>
+        </div>
+
+        <br />
+        <a href="menuPrincipal.html"><button>Criar Conta</button></a>
+      </form>
+    </div>
+    <footer class="rodape">
+      <div>
+        <nav>
+          <li>
+            <a href="paginaInicial.html" target="_blank">
+            <img
+        src="img/Imagem1.png"
+        alt="Imagem da logo do site"
+        class="imagem-logo-cabecario"
+                  /></a>
+            </li>
+        </nav>
+      </div>
+      <div>
+        <nav>
+          <li>
+            <div class="container-sem-img">
+              <br/>
+              <a href="criarConta.html" target="_blank">Criar conta</a>
+              <br />
+              <a href="login.html" target="_blank">Logar com sua conta</a>
+              <br />
+              <a href="menuPrincipal.html" target="_blank">Acessar página inicial</a>
+              <br />
+            </div>
+          </li>
+        </nav>
+      </div>
+      <div>
+        <nav>
+          <li>
+            <div class="container-sem-img">
+              <br/>
+              <p>Contatos</p>
+              <a href="mailto:medicalapp@gmail.com" class="contatos-interagivel"  target="_self">Entre em contato conosco via e-mail clicando aqui!</a>      
+              <a href="tel:+55 43 91111-1111" class="contatos-interagivel" target="_self">Ligue para a central de suporte clicando aqui!</a>
+            </div>
+          </li>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      const fonteCabecario = document.querySelectorAll('.cab');
+
+        fonteCabecario.forEach(function(elemento) {
+          elemento.addEventListener('mouseover', function() {
+            elemento.style.color = 'cyan'; 
+        });
+
+        elemento.addEventListener('mouseout', function() {
+          elemento.style.color = 'black';
+        });
+      });
+    </script>
+  </body>
+</html>
