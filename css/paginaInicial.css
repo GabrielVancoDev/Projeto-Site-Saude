@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.texto {
+  margin: 2%;
+}
+
+.container-img {
+  padding: 2%;
+}
+
+.slides-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.slides-fade {
+  display: none;
+  text-align: center;
+  max-width: 1000px;
+  max-height: 600px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+/* Botões de navegação */
+.voltar,
+.proximo {
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  transition: 0.3s ease;
+  user-select: none;
+}
+
+.proximo {
+  right: 0;
+}
+
+.voltar {
+  left: 0;
+}
+
+.voltar:hover,
+.proximo:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Efeito fade */
+.slides-fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

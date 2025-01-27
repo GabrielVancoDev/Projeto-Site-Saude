@@ -1,0 +1,81 @@
+form#signup-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: stretch;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+label {
+  gap: 2px;
+  font-size: 20px;
+  margin-top: 20px;
+  padding-bottom: 2dvh;
+}
+
+input#nome {
+  width: 250px;
+  height: 25px;
+  border-radius: 4px;
+}
+
+input#sobrenome {
+  width: 250px;
+  height: 25px;
+  border-radius: 4px;
+}
+
+input#dataNascimento {
+  height: 40px;
+  width: 120px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+input#email {
+  width: 250px;
+  height: 25px;
+  border-radius: 4px;
+}
+
+input#senha {
+  width: 250px;
+  height: 25px;
+  border-radius: 4px;
+}
+
+input#confirmarSenha {
+  width: 250px;
+  height: 25px;
+  border-radius: 4px;
+}
+
+input#telefone {
+  width: 250px;
+  height: 25px;
+  border-radius: 4px;
+}
+
+.termos {
+  display: flex;
+  align-items: center; /* Alinha a checkbox e o texto verticalmente */
+}
+
+.termos input[type="checkbox"] {
+  range: infinite;
+  margin-right: 10px; /* Ajusta o espaço entre a checkbox e o texto */
+}
+
+input#aceitarTermos {
+  width: 2.5dvh;
+  height: 2.5dvh;
+}
+button {
+  background-color: aqua;
+  width: 35dvh;
+  height: 5dvh;
+  border-radius: 4px;
+}

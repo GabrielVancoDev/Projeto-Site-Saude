@@ -1,0 +1,203 @@
+/* Estilos gerais */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  min-height: 100dvh;
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: #f3f3f3;
+}
+
+.search-bar input {
+  width: 200px;
+  padding: 5px;
+}
+
+.mic-icon,
+.search-icon {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.menu-rapido {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background-color: #d3d3d3;
+}
+
+.menu-rapido h2 {
+  margin-top: 0;
+}
+
+.icones-menu-rapido {
+  display: block;
+  width: 4vh;
+  margin-right: 2vh;
+}
+
+.menu-rapido button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #4eafc4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.campaigns {
+  padding: 20px;
+  text-align: center;
+}
+
+.campaign-slider {
+  display: flex;
+  overflow-x: scroll;
+  padding: 10px;
+  gap: 20px;
+}
+
+.campaign-slide {
+  background-color: #ffdd57;
+  color: #333;
+}
+
+.slides-container {
+  position: relative;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.slides-fade {
+  justify-content: center;
+  display: block;
+  text-align: center;
+  max-width: 1000px;
+  max-height: 600px;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+.imagens-campanha {
+  display: block;
+}
+
+/* Botões de navegação */
+.voltar,
+.proximo {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 2vh;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  transition: 0.3s ease;
+  user-select: none;
+}
+
+.proximo {
+  right: 0;
+}
+
+.voltar:hover,
+.proximo:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Efeito fade */
+.slides-fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section.pesquisa {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+
+input {
+  width: 70dvh;
+  height: 5.5vh;
+  margin: 8px 8px;
+  text-align: left;
+}
+
+div.icons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+p {
+  margin-right: auto;
+}
+
+button.pesquisar {
+  height: 6dvh;
+  width: 6dvh;
+}
+
+button.menu {
+  display: contents;
+  height: 7.5dvh;
+  width: 16dvh;
+}
+
+menu {
+  display: contents;
+  font-size: 2.6dvh;
+  font-weight: bold;
+}
+
+button {
+  height: 9dvh;
+  width: 50dvh;
+  margin: 1vh;
+  border-radius: 4px;
+}
+
+button.mic-icone {
+  height: 6dvh;
+  width: 6dvh;
+}
+
+.campanhas {
+  margin-top: 2%;
+}

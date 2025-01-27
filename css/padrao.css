@@ -1,0 +1,92 @@
+/* Formatação base para a página */
+html,
+body {
+  background-image: url(/img/Tema\ site\ 1920\ x\ 1080.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+a,
+li,
+h1,
+h2 {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: larger;
+}
+
+/* Seção cabeçario */
+
+.cabecario {
+  background-color: rgba(120, 212, 181, 0.286);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.lista {
+  display: flex;
+}
+
+.imagem-logo-cabecario {
+  height: 10vh;
+  width: 10vh;
+}
+
+.lista-nav {
+  margin-left: 1vh;
+}
+
+.container-logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Seção rodapé */
+
+.rodape {
+  background-color: rgba(120, 212, 181, 0.286);
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.contatos-interagivel {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+  font-weight: bold;
+  color: blue;
+}
+
+@media screen and (max-width: 800px) {
+  body,
+  html,
+  .cabecario,
+  .rodape {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .rodape {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-top: 400px;
+  }
+}
